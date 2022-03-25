@@ -33,158 +33,143 @@ h1:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .item {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: var(--border-radius);
-    padding: 20px;
-    margin: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: var(--border-radius);
+  padding: 20px;
+  margin: 10px;
 }
 
 .item:hover {
-    background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 a {
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 a:link,
 a:visited {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover,
 a:active {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .name img {
-    height: 25px;
-    width: 25px;
-    vertical-align: sub;
-    margin-right: 5px;
-
+  height: 25px;
+  width: 25px;
+  vertical-align: sub;
+  margin-right: 5px;
 }
 #deleteBtn {
-    height: 20px;
-    width: 20px;
-    margin: 2px;
-    float: center;
-    cursor: pointer;
-
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  float: center;
+  cursor: pointer;
 }
 
 .modal-container {
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .show-modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal {
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-    max-width: 95%;
-    width: 500px;
-    animation: modalopen 1s;
-
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  max-width: 95%;
+  width: 500px;
+  animation: modalopen 1s;
 }
 #delModal {
-    height: 20px;
-    width: 20px;
-    margin: 2px;
-    float: right;
-    cursor: pointer;
-
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  float: right;
+  cursor: pointer;
 }
 .modal-header {
-    background: var(--primary-color);
-    color: white;
-    padding: 15px;
-
+  background: var(--primary-color);
+  color: white;
+  padding: 15px;
 }
 h3 {
-    margin: 0;
-
+  margin: 0;
 }
 .modal-content {
-    padding: 20px;
-    background: whitesmoke
+  padding: 20px;
+  background: whitesmoke;
 }
 
-.form-group{
-    height: 55px;
+.form-group {
+  height: 55px;
 }
 .form-input {
-    width: 97%;
-    padding: 5px;
-    border: 2px solid var(--primary-color);
-    border-radius: var(--border-radius);
-    display: block;
-    outline: none;
+  width: 97%;
+  padding: 5px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  display: block;
+  outline: none;
 }
 
 .form-label {
-    color: var(--primary-color);
-    display: block;
+  color: var(--primary-color);
+  display: block;
 }
-
-
 
 button {
-    cursor:pointer;
-    color: white;
-    background: var(--primary-color);
-    height: 30px;
-    width: 100px;
-    border: none;
-    border-radius: var(--border-radius);
-    margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  background: var(--primary-color);
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: var(--border-radius);
+  margin-top: 10px;
 }
 button:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 button:focus {
-    outline: none;
+  outline: none;
 }
 
-
 @keyframes modalopen {
-    from {
-        opacity: 0;
+  from {
+    opacity: 0;
+  }
 
-    }
-
-    to {
-        opacity: 1
-
-    }
-    
+  to {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }
-
-
 
